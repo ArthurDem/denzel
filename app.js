@@ -159,6 +159,5 @@ app.post("/movies/:id", (request, response) => {
             return response.status(500).send(error);
         }
         response.send({"_id" : result.value._id});
-        //response.send({"_id" : result._id}); FONCTIONNE PAS 
     });
 });
